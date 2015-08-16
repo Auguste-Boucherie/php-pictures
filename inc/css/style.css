@@ -1,0 +1,337 @@
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: white;
+  width: calc(100% - 60px);
+  padding: 80px 30px 30px 30px;
+  position: relative;
+  font-family: 'roboto_condensedregular';
+}
+
+#topline {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  background-color: white;
+  z-index: 2000;
+}
+
+#bottomline {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  background-color: white;
+  z-index: 2000;
+}
+
+h1 {
+	font-family: 'oswaldregular';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 28px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'roboto_condensedregular';
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.accueil {
+	width: 100%;
+	height: 100vh;
+	background-color: grey;
+}
+
+#menu {
+	width: 400px;
+	height: 100%;
+	background-color: white;
+	float: left;
+	position: fixed;
+	text-align: center;
+	/*border-right: 1px solid #666666;*/
+}
+
+#photo {
+	width: calc(100% - 400px);
+	margin: 0 auto;
+	text-align: center;
+	float: right;
+	margin-bottom: 40px;
+}
+
+#photo ol.photos {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#photo ol.photos li{
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+#photo ol.photos li img{
+	margin: 5px 10px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+}
+
+#photo ol.photos li img:hover {
+	opacity: .7;
+}
+
+#photo ol.photos li a:hover .link{
+	opacity: 1;
+}
+
+#photo ol.photos li:nth-child(1) {
+	display: none;
+	opacity: 0;
+}
+
+#postadmin {
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.logo {
+	width: 32px;
+	height: 32px;
+	background-image: url(../../image/photo.png);
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.logo p {
+	text-indent: -2000px;
+}
+
+.link {
+	width: 32px;
+	height: 32px;
+	background-image: url(../../image/link3.png);
+	position: absolute;
+	top: calc(50% - 16px);
+	left: calc(50% - 16px); 
+	opacity: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+}
+
+footer p {
+	font-family: 'oswaldregular';
+	font-size: 16px;
+	position: fixed;
+	bottom: 40px;
+	left: 115px;
+}
+
+.contentlogin form,  .contentlogin2 form {
+  margin: 0 auto;
+  font-family: 'roboto_condensedregular';
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  position: absolute;
+  left: 80px;
+  top: 230px;
+}
+
+.contentlogin3 form{
+  margin: 0 auto;
+  font-family: 'roboto_condensedregular';
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  position: absolute;
+  left: 100px;
+  top: 230px;
+}
+
+.contentlogin form label, .contentlogin2 form label, .contentlogin3 form label {
+  font-size: 16px;
+  font-family: 'roboto_condensedregular';
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contentlogin form input, .contentlogin2 form input, .contentlogin3 form input {
+  margin: 5px auto 15px auto;
+  padding-left: 10px;
+  width: 180px;
+  height: 40px;
+  color: #333333;
+  background-color: white;
+  font-family: 'roboto_condensedregular';
+  outline: none;
+  font-size: 16px;
+  border: 2px solid #333333;
+}
+
+.contentlogin form input:focus, .contentlogin2 form input:focus, .contentlogin3 form input:focus {
+  outline:0;
+  border: 2px solid #888888;
+}
+
+.contentlogin form input:hover, .contentlogin2 form input:hover, .contentlogin3 form input:hover {
+  border: 2px solid #888888 ;
+}
+
+#form input {
+  margin: 5px auto 15px auto;
+  padding-left: 10px;
+  height: 40px;
+  color: #333333;
+  background-color: white;
+  font-family: 'roboto_condensedregular';
+  outline: none;
+  font-size: 16px;
+  border: 2px solid #333333;
+  cursor: pointer;
+}
+
+#submit {
+	cursor: pointer;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+}
+
+#submit:hover {
+	background-color: #333333;
+	color: white;
+	border: 2px solid #333333;
+}
+
+.display {
+	display: none;
+}
+
+.displaye {
+	display: block;
+}
+
+.click1 {
+	cursor: pointer;
+	font-size: 18px;
+	padding-top: 5px;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+	border-bottom: 2px solid white;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.click1:hover {
+	color: #888888;
+	border-bottom: 2px solid #888888;
+}
+
+.click2 {
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 18px;
+	padding-top: 5px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+	border-bottom: 2px solid white;
+	width: 110px;
+	margin: 0 auto;
+}
+
+.click2:hover {
+	color: #888888;
+	border-bottom: 2px solid #888888;
+}
+
+.click3 {
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 18px;
+	padding-top: 5px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+	border-bottom: 2px solid white;
+	width: 130px;
+	margin: 0 auto;
+}
+
+.click3:hover {
+	color: #888888;
+	border-bottom: 2px solid #888888;
+}
+
+.logout {
+	position: absolute;
+	top: 460px;
+	right: 175px;
+	font-size: 18px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: 	all .3s ease;
+	-ms-transition: 	all .3s ease;
+	-o-transition: 		all .3s ease;
+	transition: 		all .3s ease;
+}
+
+.logout:hover {
+	color: #888888;
+}
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('../../font/robotocondensed-regular-webfont.eot');
+    src: url('../../font/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('../../font/robotocondensed-regular-webfont.woff') format('woff'),
+         url('../../font/robotocondensed-regular-webfont.ttf') format('truetype'),
+         url('../../font/robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('../../font/oswald-regular-webfont.eot');
+    src: url('../../font/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/oswald-regular-webfont.woff2') format('woff2'),
+         url('../../font/oswald-regular-webfont.woff') format('woff'),
+         url('../../font/oswald-regular-webfont.ttf') format('truetype'),
+         url('../../font/oswald-regular-webfont.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
